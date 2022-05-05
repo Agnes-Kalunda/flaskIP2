@@ -7,7 +7,7 @@ click==7.1.2
 Django==4.0.4
 django-cors-headers==3.11.0
 Flask==1.1.4
--e git+https://github.com/Agnes-Kalunda/flaskIP2.git@30c7139a7f04811157caca11ae76f4ade53743c3#egg=Flask_Script
+# -e git+https://github.com/Agnes-Kalunda/flaskIP2.git@30c7139a7f04811157caca11ae76f4ade53743c3#egg=Flask_Script
 gunicorn==20.1.0
 idna==3.3
 importlib-metadata==4.11.3

@@ -26,11 +26,19 @@ As a user, I would want to click on an article and read the full article on the 
 * Python3.9
 
 ## Installation
-* Open terminal (ctr+alt+t)
-* git clone :https://github.com/Agnes-Kalunda/flaskIP2.git
-* cd news
-* code .
-* (view on VS)
+
+* Clone the repository : https://github.com/Agnes-Kalunda/flaskIP2.git.
+* Extract and open the folder on VS code or navigate to the folder on your terminal.
+* On the terminal, create a virtual environment
+* python3 -m venv virtual
+* And activate it:source virtual/bin/activate
+    * NB virtual is the name of the environment.
+
+* Pip install dependancies highlighted on the requirements.txt by running
+* pip install -r requirements.txt
+* You can generate run 'python3 manage.py' to view the application on your browser
+
+
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

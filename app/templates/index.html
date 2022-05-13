@@ -1,43 +1,24 @@
 {% extends 'base.html'%}
 {% import 'macros.html' as macro%}
-
 {% block styles%}
     {{ super() }}
     <link rel="stylesheet" href="{{url_for('static',filename='css/home.css')}}">
 {% endblock %}
-
-
-
 {% block content %}
 <div class="container">
-
     <div class="jumbotron" style="color:white; background-color:#01152B; ">
-
+        
             <h2 class = 'text-center' style="color:white; font-weight: 600;" >News-Link</h2>
             <p class ='text-center'><i>Your reliable link to credible news sources</i></p> 
     </div>
 
 
-    <!-- Business News Section  -->
-    <h3 class = 'text-center'  style="color:white"> General News Sources</h3>
+    <!--  News Section  -->
+    <h3 class = 'text-center'  style="color:white"> News Sources</h3>
 
 
     {{ macro.displaySourceResult(general)}}
 
-    <!-- Business News Section  -->
 
-    <h3 class ='text-center'  style="color:white"> Technology News Sources</h3>
-    
-    {{ macro.displaySourceResult(technology)}}
-    <!-- Entertainment News Section  -->
-     
-    <h3 class = 'text-center'  style="color:white"> Entertainment News Sources</h3>
-   
-    {{ macro.displaySourceResult(entertainment)}}
-    <!-- Entertainment News Section  -->
-     
-    <h3 class = 'text-center'  style="color:white"> Sports News Sources</h3>
-    
-    {{ macro.displaySourceResult(sports)}}
 </div>
 {% endblock %}

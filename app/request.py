@@ -1,5 +1,8 @@
 import requests
 from .models import Sources, News_Articles
+from datetime import datetime
+
+
 base_news_url = None
 base_articles_url = None
 api_key = None
@@ -13,13 +16,12 @@ def configure_request(app):
 def news():
     source_url = base_news_url.format(api_key)
     my_sources = requests.get(source_url).json()
-
+    
     my_results = my_sources['sources']
-
+    
     
     my_final_sources = []
-
-
+    
     for source in my_results :
         id = source['id']
         name = source['name']
